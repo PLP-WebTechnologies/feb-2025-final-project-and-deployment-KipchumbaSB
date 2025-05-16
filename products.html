@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TechTrend Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="products">
+        <h2>All Products</h2>
+        <div class="filter">
+            <label for="category">Filter by Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="laptop">Laptops</option>
+                <option value="smartphone">Smartphones</option>
+                <option value="accessory">Accessories</option>
+            </select>
+        </div>
+        <div class="product-list">
+            <article class="product-card" data-category="laptop">
+                <img src="https://images.pexels.com/photos/7974/pexels-photo.jpg" alt="Laptop">
+                <h3>UltraBook Pro</h3>
+                <p>$999.99</p>
+                <button class="add-to-cart" data-id="1" data-name="UltraBook Pro" data-price="999.99">Add to Cart</button>
+            </article>
+            <article class="product-card" data-category="smartphone">
+                <img src="https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg" alt="Smartphone">
+                <h3>SmartPhone X</h3>
+                <p>$799.99</p>
+                <button class="add-to-cart" data-id="2" data-name="SmartPhone X" data-price="799.99">Add to Cart</button>
+            </article>
+            <article class="product-card" data-category="accessory">
+                <img src="https://images.pexels.com/photos/374720/pexels-photo-374720.jpeg" alt="Headphones">
+                <h3>Wireless Headphones</h3>
+                <p>$199.99</p>
+                <button class="add-to-cart" data-id="3" data-name="Wireless Headphones" data-price="199.99">Add to Cart</button>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TechTrend Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

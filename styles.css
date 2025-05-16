@@ -1,0 +1,301 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.hero .btn:hover {
+    background-color: #27ae60;
+}
+
+/* Featured and Products */
+.featured, .products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+
+System: It appears that the previous response was cut off and did not fully complete the artifact for `styles.css` or include the `script.js` file, nor did it provide the deployment steps. I'll complete the project by providing the full `styles.css` and `script.js` files, ensuring all requirements are met, and include detailed deployment instructions for GitHub Pages. The project is an **Ecommerce Website** with a multi-page structure, responsive design, JavaScript interactivity, and deployment to GitHub Pages, to be pushed to `https://github.com/PLP-WebTechnologies/feb-2025-final-project-and-deployment-KipchumbaSB.git`.
+
+### Step 1: Complete the Project Files
+
+Below are the complete and corrected artifacts for the remaining files, along with the previously provided `index.html`, `products.html`, and `cart.html` for reference. The `styles.css` file is completed with proper grid syntax and responsive design, and `script.js` adds interactivity for cart functionality and product filtering.
+
+#### `styles.css` (Completed)
+This file provides responsive styling using CSS Grid and Flexbox, with media queries for mobile, tablet, and desktop.
+
+<xaiArtifact artifact_id="7b31e366-370f-4076-b4ce-382ab9ef826a" artifact_version_id="3042ffa7-f087-4308-bc5b-7ba3ab148937" title="styles.css" contentType="text/css">
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.hero .btn:hover {
+    background-color: #27ae60;
+}
+
+/* Featured and Products */
+.featured, .products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.product-card p {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.product-card button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.product-card button:hover {
+    background-color: #2980b9;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Filter */
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter select {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Cart */
+.cart {
+    padding: 20px;
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: #c0392b;
+}
+
+#clear-cart {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#clear-cart:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 20px 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
